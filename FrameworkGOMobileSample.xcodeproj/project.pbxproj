@@ -8,12 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		01C58CEA1CF4A7FB0028BAF9 /* FrameworkGOMobileSample.h in Headers */ = {isa = PBXBuildFile; fileRef = 01C58CE91CF4A7FB0028BAF9 /* FrameworkGOMobileSample.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		01C58CF21CF4AB5C0028BAF9 /* Sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01C58CF11CF4AB5C0028BAF9 /* Sample.framework */; };
+		01C58CF41CF4AB670028BAF9 /* Sample.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 01C58CF11CF4AB5C0028BAF9 /* Sample.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		01C58CF31CF4AB600028BAF9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				01C58CF41CF4AB670028BAF9 /* Sample.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		01C58CE61CF4A7FB0028BAF9 /* FrameworkGOMobileSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FrameworkGOMobileSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		01C58CE91CF4A7FB0028BAF9 /* FrameworkGOMobileSample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FrameworkGOMobileSample.h; sourceTree = "<group>"; };
 		01C58CEB1CF4A7FB0028BAF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01C58CF11CF4AB5C0028BAF9 /* Sample.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sample.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01C58CF21CF4AB5C0028BAF9 /* Sample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -30,6 +47,7 @@
 		01C58CDC1CF4A7FB0028BAF9 = {
 			isa = PBXGroup;
 			children = (
+				01C58CF11CF4AB5C0028BAF9 /* Sample.framework */,
 				01C58CE81CF4A7FB0028BAF9 /* FrameworkGOMobileSample */,
 				01C58CE71CF4A7FB0028BAF9 /* Products */,
 			);
@@ -74,6 +92,7 @@
 				01C58CE21CF4A7FB0028BAF9 /* Frameworks */,
 				01C58CE31CF4A7FB0028BAF9 /* Headers */,
 				01C58CE41CF4A7FB0028BAF9 /* Resources */,
+				01C58CF31CF4AB600028BAF9 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -234,6 +253,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = FrameworkGOMobileSample/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -250,6 +273,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = FrameworkGOMobileSample/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
