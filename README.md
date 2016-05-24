@@ -13,12 +13,12 @@ Get the gomobile library using this sample project: https://github.com/dcu/gomob
 2. When the task finishes, the folder where the framework was generated will be shown in Finder
 
 ## Known issues
-1. Bitcode is not supported. The framework has bitcode disabled. (Build Settings > Enable Bitcode > No)
+* Bitcode is not supported. The framework has bitcode disabled. (Build Settings > Enable Bitcode > No)
 
 When trying to compile the framework with bitcode enabled in a real device you will get:
 ld: '{...}/FrameworkGOMobileSample/Sample.framework/Sample(000002.o)' does not contain bitcode. You must rebuild it with bitcode enabled (Xcode setting ENABLE_BITCODE), obtain an updated library from the vendor, or disable bitcode for this target. for architecture armv7
 
-2. Code Sign On Copy is disabled
+* Code Sign On Copy is disabled
 Under Build Phases > Copy Files > Sample.framework
 
 When you try to compile the framework with `Code Sign On Copy` enabled in a real device you will get:
