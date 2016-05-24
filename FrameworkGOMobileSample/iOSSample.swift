@@ -9,9 +9,9 @@
 import UIKit
 import Sample
 
-class iOSSample: NSObject {
+public class iOSSample: NSObject {
 
-    func sum(a: Int32, b: Int32) -> Int32 {
+    public func sum(a: Int32, b: Int32) -> Int32 {
         return GoSampleSum(a, b)
     }
 
