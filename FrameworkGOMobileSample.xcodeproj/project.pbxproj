@@ -23,7 +23,7 @@
 /* Begin PBXBuildFile section */
 		01C58CEA1CF4A7FB0028BAF9 /* FrameworkGOMobileSample.h in Headers */ = {isa = PBXBuildFile; fileRef = 01C58CE91CF4A7FB0028BAF9 /* FrameworkGOMobileSample.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		01C58CF21CF4AB5C0028BAF9 /* Sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01C58CF11CF4AB5C0028BAF9 /* Sample.framework */; };
-		01C58CF41CF4AB670028BAF9 /* Sample.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 01C58CF11CF4AB5C0028BAF9 /* Sample.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		01C58CF41CF4AB670028BAF9 /* Sample.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 01C58CF11CF4AB5C0028BAF9 /* Sample.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -283,10 +283,12 @@
 		01C58CEF1CF4A7FB0028BAF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -297,16 +299,19 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.adriana.pineda.FrameworkGOMobileSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		01C58CF01CF4A7FB0028BAF9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -353,6 +358,7 @@
 				01C58CF01CF4A7FB0028BAF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		01C58CF61CF4AB8C0028BAF9 /* Build configuration list for PBXAggregateTarget "UniversalFramework" */ = {
 			isa = XCConfigurationList;
@@ -361,6 +367,7 @@
 				01C58CF81CF4AB8C0028BAF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
