@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Sample
 
 public class iOSSample: NSObject {
 
