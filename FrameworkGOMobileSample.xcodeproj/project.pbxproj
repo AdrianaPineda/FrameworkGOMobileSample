@@ -21,11 +21,11 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		019BDB361CF7453B00D4FE2A /* Sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 019BDB351CF7453B00D4FE2A /* Sample.framework */; };
+		019BDB371CF7453F00D4FE2A /* Sample.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 019BDB351CF7453B00D4FE2A /* Sample.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		01C58CEA1CF4A7FB0028BAF9 /* FrameworkGOMobileSample.h in Headers */ = {isa = PBXBuildFile; fileRef = 01C58CE91CF4A7FB0028BAF9 /* FrameworkGOMobileSample.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		01C58D201CF4B6620028BAF9 /* iOSSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C58D1F1CF4B6620028BAF9 /* iOSSample.swift */; };
 		01CBAEAA1CF740F10076752D /* Sample.h in Headers */ = {isa = PBXBuildFile; fileRef = 01CBAEA91CF740F10076752D /* Sample.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		01CBAEAC1CF742230076752D /* Sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01CBAEA61CF740DA0076752D /* Sample.framework */; };
-		01CBAEAD1CF742260076752D /* Sample.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 01CBAEA61CF740DA0076752D /* Sample.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,18 +35,18 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				01CBAEAD1CF742260076752D /* Sample.framework in CopyFiles */,
+				019BDB371CF7453F00D4FE2A /* Sample.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		019BDB351CF7453B00D4FE2A /* Sample.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sample.framework; sourceTree = "<group>"; };
 		01C58CE61CF4A7FB0028BAF9 /* FrameworkGOMobileSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FrameworkGOMobileSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		01C58CE91CF4A7FB0028BAF9 /* FrameworkGOMobileSample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FrameworkGOMobileSample.h; sourceTree = "<group>"; };
 		01C58CEB1CF4A7FB0028BAF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01C58D1F1CF4B6620028BAF9 /* iOSSample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iOSSample.swift; sourceTree = "<group>"; };
-		01CBAEA61CF740DA0076752D /* Sample.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sample.framework; sourceTree = "<group>"; };
 		01CBAEA91CF740F10076752D /* Sample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sample.h; path = ../Sample.framework/Headers/Sample.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -55,7 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01CBAEAC1CF742230076752D /* Sample.framework in Frameworks */,
+				019BDB361CF7453B00D4FE2A /* Sample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,7 +65,7 @@
 		01C58CDC1CF4A7FB0028BAF9 = {
 			isa = PBXGroup;
 			children = (
-				01CBAEA61CF740DA0076752D /* Sample.framework */,
+				019BDB351CF7453B00D4FE2A /* Sample.framework */,
 				01C58CE81CF4A7FB0028BAF9 /* FrameworkGOMobileSample */,
 				01C58CE71CF4A7FB0028BAF9 /* Products */,
 			);
