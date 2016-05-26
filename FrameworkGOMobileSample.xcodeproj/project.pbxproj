@@ -21,11 +21,11 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		019B3A771CF67BEB0090024B /* Sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 019B3A761CF67BEB0090024B /* Sample.framework */; };
-		019B3A781CF67BF00090024B /* Sample.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 019B3A761CF67BEB0090024B /* Sample.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		019B3A881CF737F00090024B /* Sample.h in Headers */ = {isa = PBXBuildFile; fileRef = 019B3A871CF737F00090024B /* Sample.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		01C58CEA1CF4A7FB0028BAF9 /* FrameworkGOMobileSample.h in Headers */ = {isa = PBXBuildFile; fileRef = 01C58CE91CF4A7FB0028BAF9 /* FrameworkGOMobileSample.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		01C58D201CF4B6620028BAF9 /* iOSSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C58D1F1CF4B6620028BAF9 /* iOSSample.swift */; };
+		01CBAEA71CF740DA0076752D /* Sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01CBAEA61CF740DA0076752D /* Sample.framework */; };
+		01CBAEA81CF740E10076752D /* Sample.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 01CBAEA61CF740DA0076752D /* Sample.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		01CBAEAA1CF740F10076752D /* Sample.h in Headers */ = {isa = PBXBuildFile; fileRef = 01CBAEA91CF740F10076752D /* Sample.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,19 +35,19 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				019B3A781CF67BF00090024B /* Sample.framework in CopyFiles */,
+				01CBAEA81CF740E10076752D /* Sample.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		019B3A761CF67BEB0090024B /* Sample.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sample.framework; sourceTree = "<group>"; };
-		019B3A871CF737F00090024B /* Sample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sample.h; sourceTree = "<group>"; };
 		01C58CE61CF4A7FB0028BAF9 /* FrameworkGOMobileSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FrameworkGOMobileSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		01C58CE91CF4A7FB0028BAF9 /* FrameworkGOMobileSample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FrameworkGOMobileSample.h; sourceTree = "<group>"; };
 		01C58CEB1CF4A7FB0028BAF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01C58D1F1CF4B6620028BAF9 /* iOSSample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iOSSample.swift; sourceTree = "<group>"; };
+		01CBAEA61CF740DA0076752D /* Sample.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sample.framework; sourceTree = "<group>"; };
+		01CBAEA91CF740F10076752D /* Sample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sample.h; path = ../Sample.framework/Headers/Sample.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				019B3A771CF67BEB0090024B /* Sample.framework in Frameworks */,
+				01CBAEA71CF740DA0076752D /* Sample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,7 +65,7 @@
 		01C58CDC1CF4A7FB0028BAF9 = {
 			isa = PBXGroup;
 			children = (
-				019B3A761CF67BEB0090024B /* Sample.framework */,
+				01CBAEA61CF740DA0076752D /* Sample.framework */,
 				01C58CE81CF4A7FB0028BAF9 /* FrameworkGOMobileSample */,
 				01C58CE71CF4A7FB0028BAF9 /* Products */,
 			);
@@ -82,7 +82,7 @@
 		01C58CE81CF4A7FB0028BAF9 /* FrameworkGOMobileSample */ = {
 			isa = PBXGroup;
 			children = (
-				019B3A871CF737F00090024B /* Sample.h */,
+				01CBAEA91CF740F10076752D /* Sample.h */,
 				01C58CE91CF4A7FB0028BAF9 /* FrameworkGOMobileSample.h */,
 				01C58CEB1CF4A7FB0028BAF9 /* Info.plist */,
 				01C58D1F1CF4B6620028BAF9 /* iOSSample.swift */,
@@ -97,8 +97,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				019B3A881CF737F00090024B /* Sample.h in Headers */,
 				01C58CEA1CF4A7FB0028BAF9 /* FrameworkGOMobileSample.h in Headers */,
+				01CBAEAA1CF740F10076752D /* Sample.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
