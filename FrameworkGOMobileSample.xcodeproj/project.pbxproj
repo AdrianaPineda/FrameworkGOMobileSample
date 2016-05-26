@@ -21,9 +21,9 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		019B3A771CF67BEB0090024B /* Sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 019B3A761CF67BEB0090024B /* Sample.framework */; };
+		019B3A781CF67BF00090024B /* Sample.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 019B3A761CF67BEB0090024B /* Sample.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		01C58CEA1CF4A7FB0028BAF9 /* FrameworkGOMobileSample.h in Headers */ = {isa = PBXBuildFile; fileRef = 01C58CE91CF4A7FB0028BAF9 /* FrameworkGOMobileSample.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		01C58CF21CF4AB5C0028BAF9 /* Sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01C58CF11CF4AB5C0028BAF9 /* Sample.framework */; };
-		01C58CF41CF4AB670028BAF9 /* Sample.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 01C58CF11CF4AB5C0028BAF9 /* Sample.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		01C58D201CF4B6620028BAF9 /* iOSSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C58D1F1CF4B6620028BAF9 /* iOSSample.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,17 +34,17 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				01C58CF41CF4AB670028BAF9 /* Sample.framework in CopyFiles */,
+				019B3A781CF67BF00090024B /* Sample.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		019B3A761CF67BEB0090024B /* Sample.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sample.framework; sourceTree = "<group>"; };
 		01C58CE61CF4A7FB0028BAF9 /* FrameworkGOMobileSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FrameworkGOMobileSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		01C58CE91CF4A7FB0028BAF9 /* FrameworkGOMobileSample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FrameworkGOMobileSample.h; sourceTree = "<group>"; };
 		01C58CEB1CF4A7FB0028BAF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		01C58CF11CF4AB5C0028BAF9 /* Sample.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sample.framework; sourceTree = "<group>"; };
 		01C58D1F1CF4B6620028BAF9 /* iOSSample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iOSSample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -53,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01C58CF21CF4AB5C0028BAF9 /* Sample.framework in Frameworks */,
+				019B3A771CF67BEB0090024B /* Sample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,7 +63,7 @@
 		01C58CDC1CF4A7FB0028BAF9 = {
 			isa = PBXGroup;
 			children = (
-				01C58CF11CF4AB5C0028BAF9 /* Sample.framework */,
+				019B3A761CF67BEB0090024B /* Sample.framework */,
 				01C58CE81CF4A7FB0028BAF9 /* FrameworkGOMobileSample */,
 				01C58CE71CF4A7FB0028BAF9 /* Products */,
 			);
