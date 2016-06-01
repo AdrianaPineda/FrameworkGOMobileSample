@@ -3,10 +3,12 @@
 ## Requirements
 Get the gomobile library using this sample project: https://github.com/dcu/gomobile-sample
 
+You can run the script `copy-sample.sh` or follow the steps below:
+
 1. go get -v github.com/dcu/gomobile-sample
 2. Go to the 'gomobile-sample' project
 3. Execute 'make ios'
-4. Add the 'Sample.framework' inside the root of the project 'FrameworkGOMobileSample'
+4. Add the 'Sample.framework' inside the root of the project 'FrameworkGOMobileSample'.
 
 Make sure the framework is added in 'Link Binary with Libraries' and in 'Copy Files' under Project > Build Phases
 'Code Sign on Copy' must be disabled for 'Copy Files'
