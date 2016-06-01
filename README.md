@@ -3,7 +3,7 @@
 ## Requirements
 Get the gomobile library using this sample project: https://github.com/dcu/gomobile-sample
 
-You can run the script `copy-sample.sh` or follow the steps below:
+You can run the script `copy-sample.sh` (located in the root of this repo) or follow the steps below:
 
 1. go get -v github.com/dcu/gomobile-sample
 2. Go to the 'gomobile-sample' project
@@ -16,6 +16,7 @@ Make sure the framework is added in 'Link Binary with Libraries' and in 'Copy Fi
 ## Create universal framework
 1. Run target 'Universal Framework'. This script will generate a framework with architectures x86_64 armv7 arm64
 2. When the task finishes, the folder where the framework was generated will be shown in Finder
+3. Go to https://github.com/AdrianaPineda/iOSGOMobileSampleApp to setup your sample app
 
 ## Known issues
 * Bitcode is not supported. The framework has bitcode disabled. (Build Settings > Enable Bitcode > No)
