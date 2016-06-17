@@ -1,5 +1,7 @@
 # FrameworkGOMobileSample
 
+This framework is an [umbrella framework](https://developer.apple.com/library/mac/documentation/MacOSX/Conceptual/BPFrameworks/Concepts/FrameworkAnatomy.html#//apple_ref/doc/uid/20002253-97623-BAJJHAJC) that includes a gomobile framework (Sample.framework).
+
 ## Requirements
 Get the gomobile library using this sample project: https://github.com/dcu/gomobile-sample
 
@@ -19,13 +21,7 @@ Make sure the framework is added in 'Link Binary with Libraries' and in 'Copy Fi
 3. Go to https://github.com/AdrianaPineda/iOSGOMobileSampleApp to setup your sample app
 
 ## Known issues
-* Bitcode is not supported. The framework has bitcode disabled. (Build Settings > Enable Bitcode > No)
-
-When trying to compile the framework with bitcode enabled in a real device you will get:
-ld: '{...}/FrameworkGOMobileSample/Sample.framework/Sample(000002.o)' does not contain bitcode. You must rebuild it with bitcode enabled (Xcode setting ENABLE_BITCODE), obtain an updated library from the vendor, or disable bitcode for this target. for architecture armv7
-
-* Code Sign On Copy is disabled
-Under Build Phases > Copy Files > Sample.framework
+* Unable to generate framework when 'Code Sign On Copy' is disabled under Build Phases > Copy Files > Sample.framework
 
 When you try to compile the framework with `Code Sign On Copy` enabled in a real device you will get:
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip: string table not at the end of the file (can't be processed) in file: /{...}/FrameworkGOMobileSample/Sample.framework/Versions/A/Sample(go.o) (for architecture armv7)
