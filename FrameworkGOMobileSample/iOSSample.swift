@@ -14,4 +14,12 @@ public class iOSSample: NSObject {
         return GoSampleSum(a, b)
     }
 
+    public func initSDK() {
+        GoSampleInit()
+    }
+
+    public func crashSDK() {
+        GoSampleCrash()
+    }
+
 }
