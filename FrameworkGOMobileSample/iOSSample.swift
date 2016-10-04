@@ -10,15 +10,15 @@ import UIKit
 
 public class iOSSample: NSObject {
 
-    public func sum(a: Int32, b: Int32) -> Int32 {
+    public class func sum(a: Int32, b: Int32) -> Int32 {
         return GoSampleSum(a, b)
     }
 
-    public func initSDK() {
+    public class func initSDK() {
         GoSampleInit()
     }
 
-    public func crashSDK() {
+    public class func crashSDK() {
         GoSampleCrash()
     }
 
