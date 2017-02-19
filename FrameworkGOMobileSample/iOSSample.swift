@@ -8,17 +8,17 @@
 
 import UIKit
 
-public class iOSSample: NSObject {
+open class iOSSample: NSObject {
 
-    public class func sum(a: Int32, b: Int32) -> Int32 {
+    open class func sum(_ a: Int32, b: Int32) -> Int32 {
         return GoSampleSum(a, b)
     }
 
-    public class func initSDK() {
+    open class func initSDK() {
         GoSampleInit()
     }
 
-    public class func crashSDK() {
+    open class func crashSDK() {
         GoSampleCrash()
     }
 

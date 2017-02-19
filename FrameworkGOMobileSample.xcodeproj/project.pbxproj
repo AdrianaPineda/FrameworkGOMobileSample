@@ -120,6 +120,7 @@
 				TargetAttributes = {
 					01C58CE51CF4A7FB0028BAF9 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0820;
 					};
 					01C58CF51CF4AB8B0028BAF9 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -293,6 +294,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -315,6 +317,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.adriana.pineda.FrameworkGOMobileSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
