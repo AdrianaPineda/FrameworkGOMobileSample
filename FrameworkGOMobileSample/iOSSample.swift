@@ -10,7 +10,7 @@ import UIKit
 
 open class iOSSample: NSObject {
 
-    open class func sum(_ a: Int32, b: Int32) -> Int32 {
+    open class func sum(_ a: Int, b: Int) -> Int {
         return GoSampleSum(a, b)
     }
 

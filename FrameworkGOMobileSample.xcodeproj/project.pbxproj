@@ -21,19 +21,35 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		012F61AD1E8836BF006EB446 /* Sample.h in Headers */ = {isa = PBXBuildFile; fileRef = 012F61AC1E8836BF006EB446 /* Sample.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		012F61B31E883730006EB446 /* GoSample.h in Headers */ = {isa = PBXBuildFile; fileRef = 012F61B11E883730006EB446 /* GoSample.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		012F61B41E883730006EB446 /* GoUniverse.h in Headers */ = {isa = PBXBuildFile; fileRef = 012F61B21E883730006EB446 /* GoUniverse.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		015F690D1D36C66B00B9B904 /* Sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 015F690C1D36C66B00B9B904 /* Sample.framework */; };
 		01C58CEA1CF4A7FB0028BAF9 /* FrameworkGOMobileSample.h in Headers */ = {isa = PBXBuildFile; fileRef = 01C58CE91CF4A7FB0028BAF9 /* FrameworkGOMobileSample.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		01C58D201CF4B6620028BAF9 /* iOSSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C58D1F1CF4B6620028BAF9 /* iOSSample.swift */; };
-		01CBAEAA1CF740F10076752D /* Sample.h in Headers */ = {isa = PBXBuildFile; fileRef = 01CBAEA91CF740F10076752D /* Sample.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		012F61A81E883435006EB446 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		012F61AC1E8836BF006EB446 /* Sample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sample.h; path = Sample.framework/Versions/A/Headers/Sample.h; sourceTree = SOURCE_ROOT; };
+		012F61B11E883730006EB446 /* GoSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoSample.h; sourceTree = "<group>"; };
+		012F61B21E883730006EB446 /* GoUniverse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoUniverse.h; sourceTree = "<group>"; };
 		015F690C1D36C66B00B9B904 /* Sample.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sample.framework; sourceTree = "<group>"; };
 		01C58CE61CF4A7FB0028BAF9 /* FrameworkGOMobileSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FrameworkGOMobileSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		01C58CE91CF4A7FB0028BAF9 /* FrameworkGOMobileSample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FrameworkGOMobileSample.h; sourceTree = "<group>"; };
 		01C58CEB1CF4A7FB0028BAF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01C58D1F1CF4B6620028BAF9 /* iOSSample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iOSSample.swift; sourceTree = "<group>"; };
-		01CBAEA91CF740F10076752D /* Sample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sample.h; path = ../Sample.framework/Headers/Sample.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +84,9 @@
 		01C58CE81CF4A7FB0028BAF9 /* FrameworkGOMobileSample */ = {
 			isa = PBXGroup;
 			children = (
-				01CBAEA91CF740F10076752D /* Sample.h */,
+				012F61B11E883730006EB446 /* GoSample.h */,
+				012F61B21E883730006EB446 /* GoUniverse.h */,
+				012F61AC1E8836BF006EB446 /* Sample.h */,
 				01C58CE91CF4A7FB0028BAF9 /* FrameworkGOMobileSample.h */,
 				01C58CEB1CF4A7FB0028BAF9 /* Info.plist */,
 				01C58D1F1CF4B6620028BAF9 /* iOSSample.swift */,
@@ -83,8 +101,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				012F61AD1E8836BF006EB446 /* Sample.h in Headers */,
+				012F61B41E883730006EB446 /* GoUniverse.h in Headers */,
 				01C58CEA1CF4A7FB0028BAF9 /* FrameworkGOMobileSample.h in Headers */,
-				01CBAEAA1CF740F10076752D /* Sample.h in Headers */,
+				012F61B31E883730006EB446 /* GoSample.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +119,7 @@
 				01C58CE21CF4A7FB0028BAF9 /* Frameworks */,
 				01C58CE31CF4A7FB0028BAF9 /* Headers */,
 				01C58CE41CF4A7FB0028BAF9 /* Resources */,
+				012F61A81E883435006EB446 /* CopyFiles */,
 			);
 			buildRules = (
 			);
